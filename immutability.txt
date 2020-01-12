@@ -1,0 +1,11 @@
+Boolean
+Number
+,String
+,Symbol
+,Null
+,Undefined
+values cannot be changed once assigned
+Final keyword is also used.
+A variable that is declared as final and not initialized is called a blank final variable. A blank final variable forces the constructors to initialise it.
+Java classes declared as final cannot be extended. Restricting inheritance!
+Methods declared as final cannot be overridden. In methods private is equal to final, but in variables it is not.

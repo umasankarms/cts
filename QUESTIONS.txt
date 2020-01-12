@@ -1,0 +1,17 @@
+THROW STATEMENT IN A CATCH BLOCK?
+A throw statement can be used in a catch block to re-throw the exception that is caught by the catch statement. 
+PARALLLELIZATION: 
+Stream API enables developers to create the parallel streams that can take advantage of multi-core architectures and enhance the performance of Java code. I
+n a parallel stream, the operations are executed in parallel and there are two ways to create a parallel stream.
+
+Using the parallelStream() method on a collection
+Using the parallel() method on a stream
+Parallel Streams must be used only with stateless, non-interfering, and associative operations i.e.
+
+A stateless operation is an operation in which the state of one element does not affect another element
+A non-interfering operation is an operation in which data source is not affected
+An associative operation is an operation in which the result is not affected by the order of operands
+ we can use lambda expression only for functional interfaces. Or you can say interfaces which has only single abstract method(SAM).
+WHY LAMBDA USED ONLY WITH FUNCTIONAL INTERFACES?
+Because lambda expression came in Java 1.8 version for the purpose to support functional programming, and the cheif behavior of lambda 
+expression is to accept only those interface as reference variable which have one abstract method. We call such interfaces functional interface.

@@ -1,0 +1,25 @@
+Java Vector class comes under the java.util package. The vector class implements a growable array of objects. Like an array, it contains the component that can be accessed using an integer index.
+
+Vector is very useful if we don't know the size of an array in advance or we need one that can change the size over the lifetime of a program.
+
+Vector implements a dynamic array that means it can grow or shrink as required. It is similar to the ArrayList, but with two differences-
+
+Vector is synchronized.
+The vector contains many legacy methods that are not the part of a collections framework
+All the methods of Vector is synchronized. But, the methods of ArrayList is not synchronized. All the new implementations of java collection framework is not synchronized.
+
+Vector and ArrayList both uses Array internally as data structure. They are dynamically resizable. Difference is in the way they are internally resized. By default, Vector doubles the size of its array when its size is increased. But, ArrayList increases by half of its size when its size is increased.
+
+Therefore as per Java API the only main difference is, Vector’s methods are synchronized and ArrayList’s methods are not synchronized.
+
+Vector or ArrayList? Which is better to use in java?
+
+In general, executing a ‘synchronized’ method results in costlier performance than a unsynchronized method. Keeping the difference in mind, using Vector will incur a performance hit than the ArrayList. But, when there is a certain need for thread-safe operation Vector needs to be used.
+
+Is there an alternate available in java for Vector?
+ArrayList can be synchronized using the java collections framework utility class and then ArrayList itself can be used in place of Vector.
+
+When there is no need for synchronized operation and you still look for better performance ‘Array’ can be used instead of ArrayList. But the development is tedious, since it doesn’t provide user friendly methods.
+
+When you use Vector or ArrayList, always initialize to the largest capacity that the java program will need. Since incrementing the size is a costlier operation.
+

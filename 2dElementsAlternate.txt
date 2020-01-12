@@ -1,0 +1,10 @@
+#insert code for initialization of matrix and variables
+for(int i=0;i<n;i++)
+{  if(i%2==0)
+   { for(int j=0;j<n;j+=2) 
+{system.out.println(mat[i][j];
+}
+  } else 
+   { for(int j=1;j<n;j+=2) 
+{system.out.println(mat[i][j]); }
+}
