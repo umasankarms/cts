@@ -1,0 +1,347 @@
+/*Assignment1*/
+
+public class Assignment1 
+{
+
+	public static void main(String[] args)
+	 {
+		 String str = "Java programming is very easy"; 
+	         String[] arrOfStr = str.split(" ", 5); 
+	  
+	         for (String a : arrOfStr) 
+	            System.out.println(a);
+	 }
+
+}
+
+/*Assignment2*/
+
+public class Assignment2
+{
+
+	public static void main(String[] args) 
+		{
+			 String str = "Java programming is very easy"; 
+			 for (int i = 0, len = str.length(); i < len; i++) 
+		       	{
+			    char ch = str.charAt(i);
+			    if (i % 2 == 0)
+			    {
+			        System.out.print(Character.toLowerCase(ch));
+			    } 
+                            else 
+                           {
+			        System.out.print(Character.toUpperCase(ch));
+			    }
+			}
+		}
+
+}
+
+/*Assignment3*/
+
+import java.util.*;   
+class PalindromeExample2  
+{  
+   public static void main(String args[])  
+   {  
+      String original, reverse = "";   
+      Scanner in = new Scanner(System.in);   
+      System.out.println("Enter a string/number to check if it is a palindrome");  
+      original = in.nextLine();   
+      int length = original.length();   
+      for ( int i = length - 1; i >= 0; i-- )  
+         reverse = reverse + original.charAt(i);  
+      if (original.equals(reverse))  
+         System.out.println("Entered string/number is a palindrome.");  
+      else  
+         System.out.println("Entered string/number isn't a palindrome.");   
+   }  
+}  
+
+/*Assignment5*/
+
+import java.util.*;
+public class Assignment5
+{
+
+	public static void main(String[] args) {
+		 String s1 = "Java programming is very easy";
+		 String s2="Hi there";
+		 String s3="Raina is the best cricketer";
+		 String a[]=new String[3];
+		 a[0]=s1;
+		 a[1]=s2;
+		 a[2]=s3;
+		 Arrays.sort(a);
+		 System.out.println(""+Arrays.toString(a));
+		 
+	}
+
+}
+
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+import java.util.*;
+public class Assignment1 {
+
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Input your name");
+		String myname=obj.nextLine();
+		System.out.println("enter  your year of graduation");
+		int mygradyear=obj.nextInt();
+		System.out.println("My name is" + " "+ myname +" "+"and I'll graduate in" +" "+ mygradyear);
+		
+
+	}
+
+}
+
+_________________________________________________________________________________________________________________________
+
+import java.util.*;
+public class ExceptionAlso {
+
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Input your name");
+		int mygradyear=0;
+		String myname=obj.nextLine();
+		try
+		{
+			System.out.println("Input your year of graduation");
+			 mygradyear=obj.nextInt();
+		}
+		catch(Exception e)
+		{
+			System.out.println("Invalid input..try again");
+		
+			
+		}
+		System.out.println("My name is" + " "+ myname +"and I'll graduate in" +" "+ mygradyear);
+		
+
+	}
+
+}
+___________________________________________________________________________________________________
+package com.cts;
+
+import java.util.*;
+public class Quiz {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.println("Are you ready for a quiz? Yes/No");
+		String replay=s.nextLine();
+		String ss=replay;
+		int count=0;
+		if(replay==ss)
+		{
+			System.out.println("Okay, here it comes");
+			System.out.println("Q1) What is the capital of India?");
+			System.out.println("1) Delhi");
+			System.out.println("2) Mumbai");
+			System.out.println("3) Chennai");
+			int q1=s.nextInt();
+			if(q1==1)
+			{
+				count=count+1;
+				System.out.println("Thats right");
+			}
+			
+			System.out.println("Q2) Can you store the value 'dog' in a variable of type int ");
+			System.out.println("1) Yes");
+			System.out.println("2) No");
+			int q2=s.nextInt();
+			if(q2==2)
+			{
+				count=count+1;
+				System.out.println("Thats right");
+			}
+			else
+			{
+				System.out.println("Sorry,'dog' is a String. ints can only store numbers");
+			}
+			
+			
+			System.out.println("Q3) What is the result of 9+9/3 ");
+			System.out.println("1) 5");
+			System.out.println("2) 12");
+			System.out.println("3) 15/3");
+			int q3=s.nextInt();
+			if(q2==2)
+			{
+				count=count+1;
+				System.out.println("Thats right");
+			}
+			System.out.println("Your Score is "+ " "+count+ " "+"out of 3");
+			System.out.println("Thanks for playing");
+			
+		}
+		
+		
+_______________________________________________________________________
+	}
+
+}
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/*Code to capture all the integers and create an array. Output will be in sorted format*/
+
+package com.cts;
+import java.util.*;
+public class Assignment1 {
+
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the number of integers you want to create as array");
+		int n=s.nextInt();
+		int a[]=new int[n];
+		System.out.println("Enter the Array elements");
+		for(int i=0;i<n;i++)
+		{
+			a[i]=s.nextInt();
+		}
+		Arrays.sort(a);
+		System.out.println("Array Elements after sorting"+ Arrays.toString(a);
+		
+		
+	}
+
+}
+
+/*Re-implementation of above code for floating point numbers*/
+
+package com.cts;
+import java.util.*;
+public class Assignment2 {
+
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the number of integers you want to create as array");
+		int n=s.nextInt();
+		float a[]=new float[n];
+		System.out.println("Enter the Array elements");
+		for(int i=0;i<n;i++)
+		{
+			a[i]=s.nextFloat();
+		}
+		Arrays.sort(a);
+		System.out.println("Array Elements after sorting"+ Arrays.toString(a);
+		
+	}
+
+}
+
+/*Finding maximum and minimum integer of an array*/
+
+package com.cts;
+import java.util.*;
+public class Assignment3 {
+
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the number of integers you want to create as array");
+		int n=s.nextInt();
+		int a[]=new int[n];
+		System.out.println("Enter the Array elements");
+		for(int i=0;i<n;i++)
+		{
+			a[i]=s.nextInt();
+		}
+		Arrays.sort(a);
+		System.out.println("Array Elements after sorting"+ Arrays.toString(a);
+		System.out.println("The Maximum Array element is"+a[n-1]);
+		System.out.println("The Minumum Array element is"+a[0]);
+		
+	}
+
+}
+
+/*Assignment4*/
+
+package com.cts;
+import java.util.*; 
+
+class Assignment4 { 
+	
+
+
+	public static void main(String[] args) 
+	{ 
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the number of integers you want to create as array");
+		int n=s.nextInt();
+		int arr[]=new int[n];
+		System.out.println("Enter the Array elements");
+		for(int i=0;i<n;i++)
+		{
+			arr[i]=s.nextInt();
+		}
+		System.out.println("Original Array: "+ Arrays.toString(arr)); 
+		System.out.println("Enter the index of element you want to remove");
+		int Index = s.nextInt();
+		if (arr == null || Index < 0 || Index >= arr.length) 
+		{ 
+	              System.out.println("Invalid index"); 
+	        } 
+		int[] anotherArray = new int[arr.length - 1]; 
+		for (int i = 0, k = 0; i < arr.length; i++) 
+		{ 				
+			if (i == Index)
+			        { 
+					continue; 
+				} 
+				anotherArray[k++] = arr[i]; 
+		} 
+		System.out.println("Resultant Array: "+ Arrays.toString(anotherArray)); 
+	} 
+} 
+
+
+/*Assignment5*/
+
+package com.cts;
+import java.util.*;
+public class Test5 {
+	public static void main(String[] args) 
+	{
+		int[] arr = { 1, 2, 4, 5 };
+		System.out.println("Array: "+ Arrays.toString(arr));
+		Scanner s =new Scanner(System.in);
+		System.out.println("Enter the index of element you want to add");
+		int Index = s.nextInt();
+		
+		if (arr == null || Index < 0 || Index >= arr.length) 
+		{ 
+	              System.out.println("Invalid index"); 
+	     } 
+		else
+		{
+			System.out.println("Enter the element you want to add");
+			int key=s.nextInt();
+			int[] result = new int[arr.length + 1];
+		
+		for (int i = 0; i < Index; i++) {
+			result[i] = arr[i];
+		}
+
+		result[Index] = key;
+
+		for (int i = Index + 1; i <= arr.length; i++) {
+			result[i] = arr[i - 1];
+		}
+		System.out.println("Resultant Array: "+ Arrays.toString(result));
+	}
+	}
+}
+
+
